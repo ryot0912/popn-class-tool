@@ -31,6 +31,7 @@ font:14px/1.55 "Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Go
 #pp-root[data-theme=dark]{${A}}
 @media (prefers-color-scheme:dark){#pp-root[data-theme=auto]{${A}}}
 #pp-root *{box-sizing:border-box}
+#pp-root:not([data-bad]) .pp-bad{display:none}
 #pp-root button,#pp-root select,#pp-root input{font:inherit;color:inherit}
 #pp-root :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .pp-wrap{max-width:1180px;margin:0 auto;padding:20px 16px 48px;display:grid;gap:14px}
@@ -151,6 +152,29 @@ font:14px/1.55 "Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Go
 #pp-root[data-theme=site] .pp-wrap>.pp-tablewrap{border:4px solid #6561b8;border-radius:0 20px 0 20px;box-shadow:0 6px #adcae4}
 #pp-root[data-theme=site] .pp-table th{background:#ffe58a;color:#1f2858;border-bottom:2px solid #6561b8}
 #pp-root[data-theme=site] .pp-card{border:2px solid #6561b8;border-left:5px solid var(--c);border-radius:0 12px 0 12px}
+#pp-root[data-theme=sdvx]{--bg:#000;--panel:#eaf2e5;--ink:#1c2d2a;--sub:#4b6b47;--line:#a7d782;--accent:#118e2e;--accent-soft:#daf3c1;--on-accent:#fff;--c-new:#ed1e79;--c-old:#0b8aa0;--c-perfect:#f0a800;--c-fc:#ed1e79;--c-clear:#118e2e;--c-easy:#8ad004;--c-fail:#9db596;--track:#cfe3c4;--hover:#daf3c1;--top:#ffffb1;--input:#daf3c1;color-scheme:light;background:#000 url("https://eacache.s.konaminet.jp/game/sdvx/vii/images/common/bg.jpg") top center/cover no-repeat fixed;font-family:"Noto Sans JP","メイリオ",Meiryo,"Hiragino Kaku Gothic ProN",sans-serif}
+#pp-root[data-theme=sdvx] .pp-load{color:#fff}
+#pp-root[data-theme=sdvx] .pp-load div{color:#c6fe87!important}
+#pp-root[data-theme=sdvx] .pp-wrap{gap:56px;padding:48px 44px 72px}
+#pp-root[data-theme=sdvx] .pp-wrap::before{content:"pop'n music  曲データ集計";display:flex;align-items:center;height:60px;padding:0 50px 0 56px;font-size:26px;font-weight:700;color:#fff;background:linear-gradient(#ffffb1,#ffffb1) 24px 50%/8px 26px no-repeat,linear-gradient(#334d00 1px,transparent 1px) 0 0/100% 5px,#000;border:2px solid #88c429;border-radius:40px;text-shadow:1px 1px 0 #3a5607,-1px -1px 0 #3a5607,-1px 1px 0 #3a5607,1px -1px 0 #3a5607,0 0 3px #3a5607}
+#pp-root[data-theme=sdvx] .pp-panel{background:#eaf2e5;border:0;border-radius:6px;padding:24px 28px;box-shadow:0 0 0 20px rgba(0,0,0,.72),0 0 0 23px #118e2e}
+#pp-root[data-theme=sdvx] .pp-lvhead{padding:10px 14px;margin-bottom:16px;color:#1c2d2a;font-weight:700;background-color:#b4dc87;background-image:linear-gradient(#a7d782 1px,transparent 1px),linear-gradient(90deg,#a7d782 1px,transparent 1px);background-size:10px 10px;background-position:-5px -5px;border:1px solid #72a400}
+#pp-root[data-theme=sdvx] .pp-lvhead b,#pp-root[data-theme=sdvx] .pp-legend{color:#1c2d2a}
+#pp-root[data-theme=sdvx] .pp-btn{color:#fff;background:linear-gradient(#4fb23a,#118e2e);border:1px solid #118e2e;border-radius:0 15px 0 15px;padding:6px 16px;font-weight:700;text-shadow:0 0 2px #3a5607,1px 1px 0 #3a5607,-1px -1px 0 #3a5607,-1px 1px 0 #3a5607,1px -1px 0 #3a5607}
+#pp-root[data-theme=sdvx] .pp-btn:hover:not(:disabled){color:#1c2d2a;background:linear-gradient(#e6ff8f,#a9e22b);border-color:#118e2e;text-shadow:none}
+#pp-root[data-theme=sdvx] .pp-btn.pri{color:#1c2d2a;background:#94eb00;border-radius:5px;text-shadow:none}
+#pp-root[data-theme=sdvx] .pp-btn.pri:hover:not(:disabled){color:#cc6600;background:#ffd300}
+#pp-root[data-theme=sdvx] .pp-chip{color:#c6fe87;background:#1e3207;border:3px solid #1e3207;font-weight:700;padding:3px 16px}
+#pp-root[data-theme=sdvx] .pp-chip[aria-pressed=true],#pp-root[data-theme=sdvx] .pp-chip:hover{color:#1e3207;background:#c6fe87;border-color:#1e3207}
+#pp-root[data-theme=sdvx] .pp-tool{color:#fff;background:#000;border:0;border-top:2px solid #8ad004;border-bottom:2px solid #8ad004;border-radius:0;padding:12px 16px}
+#pp-root[data-theme=sdvx] .pp-tool label,#pp-root[data-theme=sdvx] .pp-tool b,#pp-root[data-theme=sdvx] .pp-info{color:#c6fe87}
+#pp-root[data-theme=sdvx] .pp-tool select,#pp-root[data-theme=sdvx] .pp-tool input[type=search]{color:#1e3207;background:#daf3c1;border:0;border-radius:20px;font-weight:700;padding:5px 14px}
+#pp-root[data-theme=sdvx] .pp-wrap>.pp-tablewrap{background:#eaf2e5;border:3px solid #118e2e;border-radius:12px}
+#pp-root[data-theme=sdvx] .pp-table th{color:#1c2d2a;background:#b4dc87;border-bottom:2px solid #72a400}
+#pp-root[data-theme=sdvx] .pp-card{background:#f6faf3;border:1px solid #a7d782;border-left:5px solid var(--c);border-radius:6px}
+#pp-root[data-theme=sdvx] .pp-ch b{color:#fff}
+#pp-root[data-theme=sdvx] .pp-ch span{color:#c6fe87}
+@media (max-width:640px){#pp-root[data-theme=sdvx] .pp-wrap{gap:36px;padding:28px 22px 56px}#pp-root[data-theme=sdvx] .pp-wrap::before{font-size:18px;height:46px}#pp-root[data-theme=sdvx] .pp-panel{padding:16px;box-shadow:0 0 0 10px rgba(0,0,0,.72),0 0 0 12px #118e2e}}
 @media (max-width:720px){.pp-head{grid-template-columns:1fr}.pp-lvs{grid-template-columns:1fr}.pp-info{margin-left:0;width:100%}}`,
 z=document.getElementById("pp-host");
 z&&z.remove();
@@ -158,14 +182,16 @@ const _=S("div",document.body);
 _.id="pp-host";
 const N=_.attachShadow({mode:"open"}),P=S("div",N);
 P.id="pp-root";
-const T=[["light","ライト"],["dark","ダーク"],["auto","端末に合わせる"],["site","サイト風"]];
+const T=[["light","ライト"],["dark","ダーク"],["auto","端末に合わせる"],["site","サイト風"],["sdvx","SDVX風"]];
 let M=E.get("pp-theme");
 T.some(t=>t[0]===M)||(M="light"),P.dataset.theme=M,S("style",P,F);
+const fontLink=()=>{if("sdvx"===M&&!document.getElementById("pp-font")){const lk=document.createElement("link");lk.id="pp-font";lk.rel="stylesheet";lk.href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&display=swap";document.head.appendChild(lk)}};
+fontLink();
 const j=S("div",P,"","pp-load"),I=S("b",j,"準備中"),R=S("div",j,"","pp-prog"),q=S("i",R),U=S("div",j,"レベル別の譜面リストを取得しています…");
 U.style.color="var(--sub)";
 let O=!1;
 const D=t=>{"Escape"===t.key&&H()},
-H=()=>{O=!0,_.remove(),document.removeEventListener("keydown",D)};
+H=()=>{O=!0,_.remove(),document.removeEventListener("keydown",D);const fk=document.getElementById("pp-font");fk&&fk.remove()};
 document.addEventListener("keydown",D);
 const B=t=>{j.textContent="",S("b",j,"取得できませんでした").style.fontSize="24px",S("div",j,t).style.color="var(--sub)",S("button",j,"閉じる","pp-btn").onclick=H},
 G=async(t,e,n)=>{
@@ -262,7 +288,7 @@ const Et=S("span",kt,"詳細ページを読むため1分ほどかかります。
 Ft=async(t,e)=>{const n=t.textContent;try{await navigator.clipboard.writeText(e),t.textContent="コピーしました"}catch(t){prompt("コピーしてください",e)}setTimeout(()=>{t.textContent=n},1500)},
 zt=S("button",At,"","pp-btn"),
 _t=()=>{zt.textContent="表示: "+T.find(t=>t[0]===M)[1]};
-_t(),zt.onclick=()=>{M=T[(T.findIndex(t=>t[0]===M)+1)%T.length][0],P.dataset.theme=M,E.set("pp-theme",M),_t()};
+_t(),zt.onclick=()=>{M=T[(T.findIndex(t=>t[0]===M)+1)%T.length][0],P.dataset.theme=M,E.set("pp-theme",M),fontLink(),_t()};
 const Nt=S("button",At,"表示中をCSVコピー","pp-btn");
 Nt.onclick=()=>Ft(Nt,["Lv,Title,Genre,New,Score,Rank,Medal,Points,Rating,Bad"].concat(dt.map(t=>[t.lv,'"'+t.title.replace(/"/g,'""')+'"','"'+t.genre.replace(/"/g,'""')+'"',t.isNew?1:0,t.score,g[m(t.rank)]||"",u[v(t.medal)]||"",t.score>0?t.cp.toFixed(2):"",t.score>0?t.rating:"",t.j?t.j.bad:""].join(","))).join("\n"));
 const Pt=S("button",At,"全データJSONコピー","pp-btn");
@@ -332,7 +358,7 @@ Q={new:n,old:a},Et.textContent="",lt(),Tt(),ve()
 }catch(t){Et.textContent="失敗: "+t.message,St.disabled=!1}finally{Jb.disabled=!1}
 };
 Jb.onclick=async()=>{
-Jb.disabled=!0,St.disabled=!0;
+Jb.disabled=!0,St.disabled=!0,P.dataset.bad="1";
 const ls=Y.filter(t=>t.score>0&&t.id&&t.d);
 let kc=0;
 try{
@@ -413,7 +439,7 @@ for(let lv=38;lv<=50;lv++)mk(String(lv),"Lv"+lv,Y.filter(r=>r.lv===lv))
 }
 {
 const BK=[["0-0","0"],["1-1","1"],["2-3","2〜3"],["4-5","4〜5"],["6-10","6〜10"],["11-99999","11〜"]],
-pn=S("section",ct,"","pp-panel"),
+pn=S("section",ct,"","pp-panel pp-bad"),
 hd=S("div",pn,"","pp-lvhead");
 S("b",hd,"レベル別のBAD数分布(「BAD数を取得」後に集計 / クリックで絞り込み・再クリックで解除)");
 const wp=S("div",pn,"","pp-tablewrap");
@@ -457,7 +483,7 @@ let Yt="table";
 const Kt=S("div",ct,"","pp-vbar"),
 Jt=[["table","一覧"],["cards","クラス対象("+(t+e)+"曲)"]].map(([t,e])=>{const n=S("button",Kt,e,"pp-chip");return n.type="button",n.onclick=()=>{Yt=t,ve()},[t,n]}),
 Vt=S("div",ct,"","pp-tool"),
-$t=(t,e,a)=>{const r=S("label",Vt,t+" "),o=S("select",r);Zs[a]=o,e.forEach(([t,e])=>{S("option",o,e).value=t}),o.value=st[a],o.onchange=()=>{st[a]=o.value,st.limit=n,ve()}};
+$t=(t,e,a)=>{const r=S("label",Vt,t+" "),o=S("select",r);"bd"===a&&r.classList.add("pp-bad"),Zs[a]=o,e.forEach(([t,e])=>{S("option",o,e).value=t}),o.value=st[a],o.onchange=()=>{st[a]=o.value,st.limit=n,ve()}};
 $t("ランク",[["","ALL"]].concat(Object.keys(f).sort((t,e)=>f[e]-f[t]).map(t=>[t,g[t]])),"rank"),
 $t("状態",[["","ALL"]].concat(x.map((t,e)=>[String(e),t])),"cat"),
 $t("表示",[["played","プレー済み"],["unplayed","未プレー"],["all","すべて"]],"pl"),
@@ -477,7 +503,7 @@ te.type="search",te.placeholder="曲名 / ジャンルで検索",te.oninput=()=>
 const ne=S("div",Vt,"","pp-info"),ae=S("div",ct,"","pp-tablewrap"),re=S("table",ae,"","pp-table"),oe=re.createTHead().insertRow(),pe={};
 [["Lv","lv"],["曲名","title"],["スコア","score"],["ランク","rank"],["メダル","medal"],["曲P","cp"],["BAD","bad"]].forEach(([t,e])=>{
 const a=S("th",oe,t);
-a.dataset.k=e,pe[e]=a,a.title="クリック: 並べ替え / Shift+クリック: 第2ソート",
+"bad"===e&&a.classList.add("pp-bad"),a.dataset.k=e,pe[e]=a,a.title="クリック: 並べ替え / Shift+クリック: 第2ソート",
 a.onclick=t=>{
 const a="title"===e?1:-1;
 if(t.shiftKey){if(e===st.sort)return;st.sort2===e?st.dir2=-st.dir2:(st.sort2=e,st.dir2=a)}
@@ -500,7 +526,7 @@ he=t=>{const e=v(t.medal);return t.msrc&&"none"!==e?'<span class="pp-ic"><img lo
 xe=t=>{const e=m(t.rank);return t.rsrc&&"none"!==e?'<span class="pp-ic"><img loading="lazy" src="'+C(t.rsrc)+'" alt="'+C(g[e]||e)+'"><small>'+C(g[e]||e)+"</small></span>":"-"},
 be={light:["LIGHT","#2f9e57"],normal:["NORMAL","#2f7fd6"],hyper:["HYPER","#b86e08"],ex:["EX","#c2255c"]};
 const bdOk=t=>{if(!t.j)return!1;const[lo,hi]=st.bd.split("-").map(Number);return t.j.bad>=lo&&t.j.bad<=hi},
-jc=(t,kk)=>'<td class="n">'+(t.j?t.j[kk]:"-")+"</td>";
+jc=(t,kk)=>'<td class="n pp-bad">'+(t.j?t.j[kk]:"-")+"</td>";
 const me=()=>{
 const n=getComputedStyle(P),a=t=>n.getPropertyValue(t).trim(),r=1.5,o=1500,p=40,l=92,c=346,s=t=>Math.ceil(t/4),d=274+104*s(tt.length)+16+44+104*s(et.length)+44,f=document.createElement("canvas");
 f.width=Math.round(2250),f.height=Math.round(d*r);
